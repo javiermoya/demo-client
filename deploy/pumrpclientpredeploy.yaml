@@ -1,0 +1,14 @@
+---
+name: pumrpclient:IDPRETAG
+clusters:
+  pumrpclientIDPRETAG:
+    services:
+      breed:
+        name: pumrpclient:IDPRETAG
+        deployable: partsunlimitedmrp/clients:IDPRETAG
+        ports:
+          webport: 8080/http
+      scale:
+        cpu: 0.5       
+        memory: 512MB
+        instances: 1
